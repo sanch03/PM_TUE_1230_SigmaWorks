@@ -1,0 +1,457 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Main_32scene",
+  "name": "Main scene",
+  "oglFOV": 90,
+  "oglZFar": 500,
+  "oglZNear": 1,
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "Button Masher",
+  "v": 209,
+  "uiSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 1.2600000000000002,
+    "windowMask": false
+  },
+  "objectsGroups": [
+    {
+      "name": "Player1Objs",
+      "objects": [
+        {
+          "name": "Player1"
+        },
+        {
+          "name": "P1Label"
+        }
+      ]
+    },
+    {
+      "name": "Player2Objs",
+      "objects": [
+        {
+          "name": "P2Label"
+        },
+        {
+          "name": "Player2"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "folded": true,
+      "name": "P1Score",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "P2Score",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 320,
+      "layer": "",
+      "locked": true,
+      "name": "Player1",
+      "persistentUuid": "a7d8f04d-2fee-4ba2-a0d7-89439a6181f4",
+      "width": 224,
+      "x": 96,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 320,
+      "layer": "",
+      "locked": true,
+      "name": "Player2",
+      "persistentUuid": "8bc6280d-eb97-4ae3-aa06-2f38ed93deb5",
+      "sealed": true,
+      "width": 224,
+      "x": 480,
+      "y": 192,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 32,
+      "layer": "",
+      "locked": true,
+      "name": "P2Label",
+      "persistentUuid": "ca5525d8-6309-407e-bbd4-19a66286cc09",
+      "sealed": true,
+      "width": 96,
+      "x": 544,
+      "y": 224,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": true,
+      "name": "P1Label",
+      "persistentUuid": "75b8fd0b-b7b1-4eda-9ab6-8e37b13ff574",
+      "sealed": true,
+      "width": 0,
+      "x": 160,
+      "y": 224,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 32,
+      "layer": "",
+      "name": "P1ScoreCounter",
+      "persistentUuid": "3186579f-f0b3-43d9-94fc-5b61d8c164f7",
+      "width": 96,
+      "x": 160,
+      "y": 288,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 32,
+      "layer": "",
+      "name": "P2ScoreCounter",
+      "persistentUuid": "39da55ed-7804-4be5-81fe-2a6c120fdaa7",
+      "width": 96,
+      "x": 544,
+      "y": 288,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "bottomMargin": 1,
+      "height": 32,
+      "leftMargin": 1,
+      "name": "Player1",
+      "rightMargin": 1,
+      "tags": "",
+      "texture": "PlayerBackground-1.png",
+      "tiled": false,
+      "topMargin": 1,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 1,
+      "height": 32,
+      "leftMargin": 1,
+      "name": "Player2",
+      "rightMargin": 1,
+      "tags": "",
+      "texture": "PlayerBackground-1-1.png",
+      "tiled": false,
+      "topMargin": 1,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "P2Label",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Player2",
+      "font": "",
+      "characterSize": 26,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "P1Label",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Player2",
+      "font": "",
+      "characterSize": 26,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "P1ScoreCounter",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "InnerText",
+          "type": "string",
+          "value": "0"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "None",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 31,
+        "g": 0,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "P2ScoreCounter",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "InnerText",
+          "type": "string",
+          "value": "0"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "None",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 31,
+        "g": 0,
+        "r": 255
+      }
+    }
+  ],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "P1Score",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "P2Score",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "P1ScoreCounter",
+            "=",
+            "ToString(Variable(P1Score))"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "P2ScoreCounter",
+            "=",
+            "ToString(Variable(P2Score))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "a"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "P1Score",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "P1ScoreCounter",
+            "=",
+            "ToString(Variable(P1Score))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "l"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "P2Score",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "P2ScoreCounter",
+            "=",
+            "ToString(Variable(P2Score))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 32,
+      "ambientLightColorG": 0,
+      "ambientLightColorR": 0,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": []
+}
