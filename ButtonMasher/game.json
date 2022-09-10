@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "ButtonMasherCountdown",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -81,6 +81,65 @@
         "metadata": "",
         "name": "CONSOLA.TTF",
         "userAdded": false
+      },
+      {
+        "file": "cozette.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "cozette.fnt",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characters.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characters.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "CozetteVector.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CozetteVector.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UFO Red.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UFO Red.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UFO Green.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UFO Green.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UFO Purple.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UFO Purple.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UFO Yellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UFO Yellow.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -91,7 +150,15 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/main-scene"
+      "referenceTo": "/layouts/buttonmashercountdown"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/buttonmashermain"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/buttonmasherend"
     }
   ],
   "externalEvents": [],
