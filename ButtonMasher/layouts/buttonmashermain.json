@@ -1158,6 +1158,19 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Implemented logic to calcualte winner",
+      "comment2": ""
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1175,57 +1188,24 @@
       "actions": [
         {
           "type": {
-            "value": "ModVarGlobal"
-          },
-          "parameters": [
-            "ButtonMasherWinner",
-            "=",
-            "1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyReleased"
+            "value": "Scene"
           },
           "parameters": [
             "",
-            "a"
-          ]
-        },
-        {
-          "type": {
-            "value": "KeyReleased"
-          },
-          "parameters": [
-            "",
-            "v"
-          ]
-        },
-        {
-          "type": {
-            "value": "KeyReleased"
-          },
-          "parameters": [
-            "",
-            "l"
-          ]
-        },
-        {
-          "type": {
-            "value": "KeyReleased"
-          },
-          "parameters": [
-            "",
-            "m"
+            "\"ButtonMasherEnd\"",
+            ""
           ]
         }
       ],
-      "actions": []
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "runtimeScene.setBackgroundColor(100,100,240);\n\n// Get the raw gdjs player score array\nconst playerScoreArray = runtimeScene.getVariables().get('PlayerScores').getAllChildrenArray()\n// Map it to a workable array of numbers\nconst playerScoreValues = playerScoreArray.map((arrayValue) => arrayValue.getAsNumber())\n// Find the max score\nconst maxPlayerScore = Math.max(...playerScoreValues)\n// Set the current winner to the max score as a string\nconst maxPlayerId = String(playerScoreValues.indexOf(maxPlayerScore) + 1)\n\n// Set the global variable to the game winner\nruntimeScene._runtimeGame.getVariables()\n    .get('ButtonMasherWinner').setString(maxPlayerId)\nruntimeScene._runtimeGame.getVariables()\n    .get('ButtonMasherScore').setNumber(maxPlayerScore)",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ]
     }
   ],
   "layers": [
