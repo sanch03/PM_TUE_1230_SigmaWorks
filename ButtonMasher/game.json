@@ -140,6 +140,114 @@
         "name": "UFO Yellow.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UFO Red2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UFO Red2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UFO Green2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UFO Green2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "A.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "A.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "L.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "L.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "M.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "M.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "V.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "V.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "A2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "A2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "M2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "M2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "V2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "V2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "A3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "A3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "M3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "M3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "V3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "V3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
