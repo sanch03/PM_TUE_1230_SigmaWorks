@@ -152,7 +152,14 @@
   },
   "objects": [],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "RLGLWinner",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "layouts": [
     {
       "b": 52,
@@ -174,7 +181,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.08,
+        "zoomFactor": 0.8799999999999999,
         "windowMask": false
       },
       "objectsGroups": [
@@ -223,7 +230,14 @@
           ]
         }
       ],
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "RandomLightTimer",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -233,7 +247,7 @@
           "name": "Earth",
           "persistentUuid": "5420469c-49c6-4639-b0e1-d8fed111b687",
           "width": 96,
-          "x": 0,
+          "x": 17,
           "y": 0,
           "zOrder": 1,
           "numberProperties": [],
@@ -287,14 +301,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 64,
           "layer": "",
           "name": "Player1",
           "persistentUuid": "fe2fb802-e152-4bfa-ae3c-ea73fd4f6927",
-          "width": 0,
+          "width": 64,
           "x": 32,
-          "y": 544,
+          "y": 509,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -302,14 +316,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 40,
           "layer": "Lighting",
           "name": "P1Light",
           "persistentUuid": "7cea581b-aa48-4755-9fd9-ef9dc2690185",
-          "width": 0,
-          "x": 48,
-          "y": 569,
+          "width": 40,
+          "x": 64,
+          "y": 559,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -317,14 +331,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 63.030303955078125,
           "layer": "",
           "name": "Player2",
           "persistentUuid": "b3e7aaeb-4046-48e4-89d5-cf10bc4584b2",
-          "width": 0,
-          "x": 272,
-          "y": 544,
+          "width": 63.030303955078125,
+          "x": 257,
+          "y": 512,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -332,14 +346,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 39.39393997192383,
           "layer": "Lighting",
           "name": "P2Light",
           "persistentUuid": "f0b1e192-6773-4389-81b4-5bdbdf34e8b3",
-          "width": 0,
-          "x": 288,
-          "y": 567,
+          "width": 39.39393997192383,
+          "x": 288.51513671875,
+          "y": 557.3030395507812,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -347,14 +361,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 61.65137481689453,
           "layer": "",
           "name": "Player3",
           "persistentUuid": "b909f24c-0b4e-4211-b197-a23eacb1755b",
-          "width": 0,
-          "x": 496,
-          "y": 544,
+          "width": 61.65137481689453,
+          "x": 481,
+          "y": 512,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -362,14 +376,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 38.532108306884766,
           "layer": "Lighting",
           "name": "P3Light",
           "persistentUuid": "ce4ea1cd-1d78-46b3-baf1-d3a48c6cd4c9",
-          "width": 0,
-          "x": 512,
-          "y": 567,
+          "width": 38.532108306884766,
+          "x": 511.82568359375,
+          "y": 556.3119506835938,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -377,14 +391,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 63.030303955078125,
           "layer": "",
           "name": "Player4",
           "persistentUuid": "ec606557-2592-4d1b-b077-70b7b08704bd",
-          "width": 0,
+          "width": 63.030303955078125,
           "x": 720,
-          "y": 544,
+          "y": 512,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -392,14 +406,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 39.39393997192383,
           "layer": "Lighting",
           "name": "P4Light",
           "persistentUuid": "82428b64-7e94-4a3f-8efd-098120cf52ec",
-          "width": 0,
-          "x": 736,
-          "y": 567,
+          "width": 39.39393997192383,
+          "x": 751.51513671875,
+          "y": 557.3030395507812,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -458,8 +472,8 @@
           "name": "SceneTimerTextDebug",
           "persistentUuid": "61794b1a-b649-4b86-85f6-c2e59705ec66",
           "width": 0,
-          "x": 160,
-          "y": 160,
+          "x": 192,
+          "y": -88,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -575,7 +589,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "radius": 10,
+            "radius": 50,
             "color": "255;255;255",
             "debugMode": false,
             "texture": ""
@@ -631,7 +645,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "radius": 10,
+            "radius": 50,
             "color": "255;255;255",
             "debugMode": false,
             "texture": ""
@@ -687,7 +701,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "radius": 10,
+            "radius": 50,
             "color": "255;255;255",
             "debugMode": false,
             "texture": ""
@@ -743,7 +757,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "radius": 10,
+            "radius": 50,
             "color": "255;255;255",
             "debugMode": false,
             "texture": ""
@@ -992,6 +1006,43 @@
                 ""
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimationName"
+                  },
+                  "parameters": [
+                    "TrafficLight",
+                    "\"Red\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "P1",
+                    "+",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Lighting::SetColor"
+                  },
+                  "parameters": [
+                    "P1Light",
+                    "\"208;2;27\""
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -1049,6 +1100,43 @@
               "parameters": [
                 "P2Light",
                 ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimationName"
+                  },
+                  "parameters": [
+                    "TrafficLight",
+                    "\"Red\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "P2",
+                    "+",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Lighting::SetColor"
+                  },
+                  "parameters": [
+                    "P2Light",
+                    "\"208;2;27\""
+                  ]
+                }
               ]
             }
           ]
@@ -1110,6 +1198,43 @@
                 ""
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimationName"
+                  },
+                  "parameters": [
+                    "TrafficLight",
+                    "\"Red\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "P3",
+                    "+",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Lighting::SetColor"
+                  },
+                  "parameters": [
+                    "P3Light",
+                    "\"208;2;27\""
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -1167,6 +1292,43 @@
               "parameters": [
                 "P4Light",
                 ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimationName"
+                  },
+                  "parameters": [
+                    "TrafficLight",
+                    "\"Red\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "P4",
+                    "+",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Lighting::SetColor"
+                  },
+                  "parameters": [
+                    "P4Light",
+                    "\"208;2;27\""
+                  ]
+                }
               ]
             }
           ]
@@ -1235,6 +1397,42 @@
               },
               "parameters": [
                 "RedLight"
+              ]
+            },
+            {
+              "type": {
+                "value": "Lighting::SetColor"
+              },
+              "parameters": [
+                "P1Light",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Lighting::SetColor"
+              },
+              "parameters": [
+                "P2Light",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Lighting::SetColor"
+              },
+              "parameters": [
+                "P3Light",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Lighting::SetColor"
+              },
+              "parameters": [
+                "P4Light",
+                "\"255;255;255\""
               ]
             }
           ]
@@ -1372,8 +1570,138 @@
                 "",
                 "\"StageTimer\""
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "RandomLightTimer",
+                "=",
+                "RandomFloatInRange(3, 5)"
+              ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"StageTimer\"",
+                ">=",
+                "Variable(RandomLightTimer)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "TrafficLight",
+                "\"Idle\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StageTimer\"",
+                    ">=",
+                    "Variable(RandomLightTimer) + 1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "TrafficLight",
+                    "\"Red\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"StageTimer\"",
+                        ">=",
+                        "Variable(RandomLightTimer) + 3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "TrafficLight",
+                        "\"Green\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "RandomLightTimer",
+                        "=",
+                        "RandomFloatInRange(3, 5)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"StageTimer\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Earth collusion (game win) logic",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1386,7 +1714,6 @@
               "subInstructions": [
                 {
                   "type": {
-                    "inverted": true,
                     "value": "CollisionNP"
                   },
                   "parameters": [
@@ -1399,7 +1726,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
                     "value": "CollisionNP"
                   },
                   "parameters": [
@@ -1412,7 +1738,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
                     "value": "CollisionNP"
                   },
                   "parameters": [
@@ -1425,7 +1750,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
                     "value": "CollisionNP"
                   },
                   "parameters": [
@@ -1439,98 +1763,157 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "P1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "P2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "P3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "P4",
+                ""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "CompareTimer"
+                    "value": "CollisionNP"
                   },
                   "parameters": [
+                    "Earth",
+                    "Player1",
                     "",
-                    "\"StageTimer\"",
-                    ">=",
-                    "2"
+                    "",
+                    ""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "SetAnimationName"
+                    "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "TrafficLight",
-                    "\"Idle\""
+                    "RLGLWinner",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Earth",
+                    "Player2",
+                    "",
+                    "",
+                    ""
                   ]
                 }
               ],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CompareTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"StageTimer\"",
-                        ">=",
-                        "3.5"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "TrafficLight",
-                        "\"Red\""
-                      ]
-                    }
-                  ],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "CompareTimer"
-                          },
-                          "parameters": [
-                            "",
-                            "\"StageTimer\"",
-                            ">=",
-                            "5"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "TrafficLight",
-                            "\"Green\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResetTimer"
-                          },
-                          "parameters": [
-                            "",
-                            "\"StageTimer\""
-                          ]
-                        }
-                      ]
-                    }
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "RLGLWinner",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Earth",
+                    "Player3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "RLGLWinner",
+                    "=",
+                    "3"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Earth",
+                    "Player4",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "RLGLWinner",
+                    "=",
+                    "4"
                   ]
                 }
               ]
@@ -1538,9 +1921,17 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Note to self, work on the following in order:\n1) End title screen following trigger of win condition. Take this from ButtonMasher and adapt it to this.\n2) Implement random functionality on traffic light - pretty much done\n3) Implement penalty for going when traffic light is active - pretty much done\n4) Smooth out bugs\n- Fix UFOs going out of bounds",
+          "comment2": ""
         }
       ],
       "layers": [
@@ -1573,7 +1964,7 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": true,
           "name": "Lighting",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         }
