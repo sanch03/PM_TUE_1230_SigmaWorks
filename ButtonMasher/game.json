@@ -426,16 +426,32 @@
         "kind": "image",
         "metadata": "",
         "name": "NewSprite2-1 copy.png",
+         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "characters.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characters.png",
         "smoothed": true,
         "userAdded": true
       },
       {
+
         "alwaysLoaded": false,
         "file": "NewSprite2-1 copy 2.png",
         "kind": "image",
         "metadata": "",
         "name": "NewSprite2-1 copy 2.png",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "CozetteVector.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CozetteVector.ttf",
         "userAdded": true
       },
       {
@@ -449,10 +465,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "UFO Red.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UFO Red.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "Picture 2.png",
         "kind": "image",
         "metadata": "",
         "name": "Picture 2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UFO Green.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UFO Green.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -543,6 +577,15 @@
         "kind": "image",
         "metadata": "",
         "name": "NewSprite-3-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UFO Purple.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UFO Purple.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -653,6 +696,15 @@
         "name": "NewSprite-1-3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UFO Yellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UFO Yellow.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -824,7 +876,20 @@
     }
   ],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "ButtonMasherWinner",
+      "type": "string",
+      "value": "This variable has not been changed (bad)"
+    },
+    {
+      "folded": true,
+      "name": "ButtonMasherScore",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -841,6 +906,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/sigmasays"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/buttonmashercountdown"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/buttonmashermain"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/buttonmasherend"
     }
   ],
   "externalEvents": [],

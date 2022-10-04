@@ -1,13 +1,17 @@
 {
-  "b": 209,
+  "b": 52,
   "disableInputWhenNotFocused": true,
   "mangledName": "Main_32scene",
   "name": "Main scene",
   "r": 209,
+  "oglFOV": 90,
+  "oglZFar": 500,
+  "oglZNear": 1,
+  "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "Button Masher",
-  "v": 209,
+  "v": 13,
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
@@ -18,16 +22,13 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.2600000000000002,
+    "zoomFactor": 1.165969067025185,
     "windowMask": false
   },
   "objectsGroups": [
     {
       "name": "Player1Objs",
       "objects": [
-        {
-          "name": "Player1"
-        },
         {
           "name": "P1Label"
         }
@@ -38,9 +39,6 @@
       "objects": [
         {
           "name": "P2Label"
-        },
-        {
-          "name": "Player2"
         }
       ]
     }
@@ -63,46 +61,11 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 320,
-      "layer": "",
-      "locked": true,
-      "name": "Player1",
-      "persistentUuid": "a7d8f04d-2fee-4ba2-a0d7-89439a6181f4",
-      "width": 224,
-      "x": 96,
-      "y": 192,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 320,
-      "layer": "",
-      "locked": true,
-      "name": "Player2",
-      "persistentUuid": "8bc6280d-eb97-4ae3-aa06-2f38ed93deb5",
-      "sealed": true,
-      "width": 224,
-      "x": 480,
-      "y": 192,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "height": 32,
       "layer": "",
-      "locked": true,
       "name": "P2Label",
       "persistentUuid": "ca5525d8-6309-407e-bbd4-19a66286cc09",
-      "sealed": true,
-      "width": 96,
+      "width": 128,
       "x": 544,
       "y": 224,
       "zOrder": 3,
@@ -118,7 +81,6 @@
       "locked": true,
       "name": "P1Label",
       "persistentUuid": "75b8fd0b-b7b1-4eda-9ab6-8e37b13ff574",
-      "sealed": true,
       "width": 0,
       "x": 160,
       "y": 224,
@@ -156,46 +118,27 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "name": "GameTimer",
+      "persistentUuid": "7a78abfd-dcdb-4a72-8b35-3cc9a96a8bce",
+      "width": 50,
+      "x": 375,
+      "y": 64,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
     {
       "assetStoreId": "",
-      "bottomMargin": 1,
-      "height": 32,
-      "leftMargin": 1,
-      "name": "Player1",
-      "rightMargin": 1,
-      "tags": "",
-      "texture": "PlayerBackground-1.png",
-      "tiled": false,
-      "topMargin": 1,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 1,
-      "height": 32,
-      "leftMargin": 1,
-      "name": "Player2",
-      "rightMargin": 1,
-      "tags": "",
-      "texture": "PlayerBackground-1-1.png",
-      "tiled": false,
-      "topMargin": 1,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bold": true,
+      "bold": false,
       "italic": false,
       "name": "P2Label",
       "smoothed": true,
@@ -205,18 +148,18 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Player2",
-      "font": "",
+      "string": "Player 2",
+      "font": "CozetteVector.ttf",
       "characterSize": 26,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
       "assetStoreId": "",
-      "bold": true,
+      "bold": false,
       "italic": false,
       "name": "P1Label",
       "smoothed": true,
@@ -226,13 +169,13 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Player2",
-      "font": "",
+      "string": "Player 1",
+      "font": "CozetteVector.ttf",
       "characterSize": 26,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
@@ -254,13 +197,13 @@
       ],
       "effects": [],
       "behaviors": [],
-      "string": "None",
-      "font": "",
+      "string": "0",
+      "font": "CozetteVector.ttf",
       "characterSize": 20,
       "color": {
-        "b": 31,
-        "g": 0,
-        "r": 255
+        "b": 194,
+        "g": 227,
+        "r": 80
       }
     },
     {
@@ -282,17 +225,51 @@
       ],
       "effects": [],
       "behaviors": [],
-      "string": "None",
-      "font": "",
+      "string": "0",
+      "font": "CozetteVector.ttf",
       "characterSize": 20,
       "color": {
-        "b": 31,
-        "g": 0,
+        "b": 194,
+        "g": 227,
+        "r": 80
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "GameTimer",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "00",
+      "font": "CozetteVector.ttf",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
         "r": 255
       }
     }
   ],
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Intialise scene variables and timer",
+      "comment2": ""
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -344,6 +321,50 @@
             "P2ScoreCounter",
             "=",
             "ToString(Variable(P2Score))"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"round_time\""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "GameTimer",
+            "=",
+            "ToString(round(abs(TimerElapsedTime(\"round_time\")-30)))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Repeat",
+      "repeatExpression": "30",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "GameTimer",
+            "=",
+            "ToString(round(abs(TimerElapsedTime(\"round_time\")-30)))"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
           ]
         }
       ]
@@ -419,11 +440,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ],
   "layers": [
