@@ -146,6 +146,49 @@
         "name": "UFO Green.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "CozetteVector.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CozetteVector.ttf",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Spin-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Spin-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Spin-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Spin-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Spin-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Spin-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Spin-2-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Spin-2-0.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -156,6 +199,12 @@
     {
       "folded": true,
       "name": "RLGLWinner",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "RLGLTimer",
       "type": "number",
       "value": 0
     }
@@ -247,8 +296,8 @@
           "name": "Earth",
           "persistentUuid": "5420469c-49c6-4639-b0e1-d8fed111b687",
           "width": 96,
-          "x": 17,
-          "y": 0,
+          "x": 32,
+          "y": 35,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -263,7 +312,7 @@
           "persistentUuid": "e5f392f9-1a8e-491a-95e9-0d28b2335fc7",
           "width": 96,
           "x": 464,
-          "y": 0,
+          "y": 32,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -278,7 +327,7 @@
           "persistentUuid": "e6669809-e3d5-42c0-b11b-f958107750b4",
           "width": 96,
           "x": 240,
-          "y": 0,
+          "y": 32,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -292,8 +341,8 @@
           "name": "Earth",
           "persistentUuid": "61303727-a206-4487-8398-ae2b19a95f03",
           "width": 96,
-          "x": 704,
-          "y": 0,
+          "x": 672,
+          "y": 32,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -307,8 +356,8 @@
           "name": "Player1",
           "persistentUuid": "fe2fb802-e152-4bfa-ae3c-ea73fd4f6927",
           "width": 64,
-          "x": 32,
-          "y": 509,
+          "x": 47,
+          "y": 479,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -322,8 +371,8 @@
           "name": "P1Light",
           "persistentUuid": "7cea581b-aa48-4755-9fd9-ef9dc2690185",
           "width": 40,
-          "x": 64,
-          "y": 559,
+          "x": 79,
+          "y": 524,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -338,7 +387,7 @@
           "persistentUuid": "b3e7aaeb-4046-48e4-89d5-cf10bc4584b2",
           "width": 63.030303955078125,
           "x": 257,
-          "y": 512,
+          "y": 479,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -353,7 +402,7 @@
           "persistentUuid": "f0b1e192-6773-4389-81b4-5bdbdf34e8b3",
           "width": 39.39393997192383,
           "x": 288.51513671875,
-          "y": 557.3030395507812,
+          "y": 524,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -368,7 +417,7 @@
           "persistentUuid": "b909f24c-0b4e-4211-b197-a23eacb1755b",
           "width": 61.65137481689453,
           "x": 481,
-          "y": 512,
+          "y": 479,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -383,7 +432,7 @@
           "persistentUuid": "ce4ea1cd-1d78-46b3-baf1-d3a48c6cd4c9",
           "width": 38.532108306884766,
           "x": 511.82568359375,
-          "y": 556.3119506835938,
+          "y": 524,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -397,8 +446,8 @@
           "name": "Player4",
           "persistentUuid": "ec606557-2592-4d1b-b077-70b7b08704bd",
           "width": 63.030303955078125,
-          "x": 720,
-          "y": 512,
+          "x": 688,
+          "y": 479,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -412,8 +461,8 @@
           "name": "P4Light",
           "persistentUuid": "82428b64-7e94-4a3f-8efd-098120cf52ec",
           "width": 39.39393997192383,
-          "x": 751.51513671875,
-          "y": 557.3030395507812,
+          "x": 719.51513671875,
+          "y": 524,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -478,6 +527,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ActionText",
+          "persistentUuid": "f12f8230-8919-4fed-8f54-ab4521d60e05",
+          "width": 0,
+          "x": 363,
+          "y": 176,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -501,7 +565,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Planet1.png",
+                      "image": "Spin-1-0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -518,7 +582,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Planet2.png",
+                      "image": "Spin-2-0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -615,7 +679,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "UFO Purple.png",
+                      "image": "UFO Green.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -671,7 +735,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "UFO Yellow.png",
+                      "image": "UFO Purple.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -727,7 +791,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "UFO Green.png",
+                      "image": "UFO Yellow.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -912,6 +976,27 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ActionText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "GO!",
+          "font": "CozetteVector.ttf",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -959,6 +1044,15 @@
               "parameters": [
                 "P4Light"
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"GameDurationTimer\""
+              ]
             }
           ]
         },
@@ -978,11 +1072,29 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "",
-                "a"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "a"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "Player1",
+                    "<=",
+                    "480"
+                  ]
+                }
               ]
             }
           ],
@@ -1013,11 +1125,29 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "AnimationName"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "TrafficLight",
-                    "\"Red\""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "TrafficLight",
+                        "\"Red\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Player1",
+                        "<=",
+                        "485\n"
+                      ]
+                    }
                   ]
                 }
               ],
@@ -1074,11 +1204,29 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "",
-                "f"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "f"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "Player2",
+                    "<=",
+                    "480"
+                  ]
+                }
               ]
             }
           ],
@@ -1109,11 +1257,29 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "AnimationName"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "TrafficLight",
-                    "\"Red\""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "TrafficLight",
+                        "\"Red\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Player2",
+                        "<=",
+                        "485\n"
+                      ]
+                    }
                   ]
                 }
               ],
@@ -1170,11 +1336,29 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "",
-                "j"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "j"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "Player3",
+                    "<=",
+                    "480"
+                  ]
+                }
               ]
             }
           ],
@@ -1205,11 +1389,29 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "AnimationName"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "TrafficLight",
-                    "\"Red\""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "TrafficLight",
+                        "\"Red\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Player3",
+                        "<=",
+                        "485\n"
+                      ]
+                    }
                   ]
                 }
               ],
@@ -1266,11 +1468,29 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "",
-                "SemiColon"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "Player4",
+                    "<=",
+                    "480"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "SemiColon"
+                  ]
+                }
               ]
             }
           ],
@@ -1301,11 +1521,29 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "AnimationName"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "TrafficLight",
-                    "\"Red\""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "TrafficLight",
+                        "\"Red\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Player4",
+                        "<=",
+                        "485\n"
+                      ]
+                    }
                   ]
                 }
               ],
@@ -1639,11 +1877,6 @@
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": []
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
@@ -1708,214 +1941,193 @@
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Or"
+                "value": "CollisionNP"
               },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Earth",
-                    "Player1",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Earth",
-                    "Player2",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Earth",
-                    "Player3",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Earth",
-                    "Player4",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
+              "parameters": [
+                "Earth",
+                "Player1",
+                "",
+                "",
+                ""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "ModVarGlobal"
               },
               "parameters": [
-                "P1",
-                ""
+                "RLGLTimer",
+                "=",
+                "TimerElapsedTime(\"GameDurationTimer\")"
               ]
             },
             {
               "type": {
-                "value": "Delete"
+                "value": "ModVarGlobal"
               },
               "parameters": [
-                "P2",
-                ""
+                "RLGLWinner",
+                "=",
+                "1"
               ]
             },
             {
               "type": {
-                "value": "Delete"
+                "value": "Scene"
               },
               "parameters": [
-                "P3",
+                "",
+                "\"RLGLEnd\"",
                 ""
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "CollisionNP"
               },
               "parameters": [
-                "P4",
+                "Earth",
+                "Player2",
+                "",
+                "",
                 ""
               ]
             }
           ],
-          "events": [
+          "actions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Earth",
-                    "Player1",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "RLGLWinner",
-                    "=",
-                    "1"
-                  ]
-                }
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "RLGLTimer",
+                "=",
+                "TimerElapsedTime(\"GameDurationTimer\")"
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Earth",
-                    "Player2",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "RLGLWinner",
-                    "=",
-                    "2"
-                  ]
-                }
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "RLGLWinner",
+                "=",
+                "2"
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Earth",
-                    "Player3",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "RLGLWinner",
-                    "=",
-                    "3"
-                  ]
-                }
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"RLGLEnd\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Earth",
+                "Player3",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "RLGLTimer",
+                "=",
+                "TimerElapsedTime(\"GameDurationTimer\")"
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Earth",
-                    "Player4",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "RLGLWinner",
-                    "=",
-                    "4"
-                  ]
-                }
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "RLGLWinner",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"RLGLEnd\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Earth",
+                "Player4",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "RLGLTimer",
+                "=",
+                "TimerElapsedTime(\"GameDurationTimer\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "RLGLWinner",
+                "=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"RLGLEnd\"",
+                ""
               ]
             }
           ]
@@ -1930,7 +2142,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Note to self, work on the following in order:\n1) End title screen following trigger of win condition. Take this from ButtonMasher and adapt it to this.\n2) Implement random functionality on traffic light - pretty much done\n3) Implement penalty for going when traffic light is active - pretty much done\n4) Smooth out bugs\n- Fix UFOs going out of bounds",
+          "comment": "Note to self, work on the following in order:\n1) Fix edge detection\n2) Fix earth hitbox\n3) Smooth out any other bugs",
           "comment2": ""
         }
       ],
@@ -1966,6 +2178,521 @@
           "name": "Lighting",
           "visibility": true,
           "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 52,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "RLGLEnd",
+      "name": "RLGLEnd",
+      "r": 0,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 13,
+      "uiSettings": {
+        "grid": true,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": true,
+        "zoomFactor": 1,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "GameOverText",
+          "persistentUuid": "54953ec3-f133-491b-a80b-ee8458bf5a5c",
+          "width": 0,
+          "x": 241,
+          "y": 128,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "DynamicWinnerSprite",
+          "persistentUuid": "a7ce662c-f9c5-43c3-a7f2-584199362e83",
+          "width": 64,
+          "x": 369,
+          "y": 192,
+          "zOrder": 2,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WinnerLabel",
+          "persistentUuid": "0027e09c-583c-4692-abc5-262313de6213",
+          "width": 0,
+          "x": 298,
+          "y": 288,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WinnerPlayerID",
+          "persistentUuid": "ed384b36-026a-4200-b667-45c9c4f6adc6",
+          "width": 0,
+          "x": 406,
+          "y": 288,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ScoreLabel",
+          "persistentUuid": "25b2bdd0-0448-4c1c-b023-5026199f9130",
+          "width": 0,
+          "x": 322,
+          "y": 320,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ScoreLabelText",
+          "persistentUuid": "cbf7b0a7-ab09-481e-bb19-22ff0de23f13",
+          "width": 0,
+          "x": 406,
+          "y": 320,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "GameOverText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Game over!",
+          "font": "CozetteVector.ttf",
+          "characterSize": 64,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "DynamicWinnerSprite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "UFO Red.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "UFO Green.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "UFO Purple.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "4",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "UFO Yellow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "WinnerLabel",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Winner:",
+          "font": "CozetteVector.ttf",
+          "characterSize": 25,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "WinnerPlayerID",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Player -",
+          "font": "CozetteVector.ttf",
+          "characterSize": 25,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ScoreLabel",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Time:",
+          "font": "CozetteVector.ttf",
+          "characterSize": 25,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ScoreLabelText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "0:00",
+          "font": "CozetteVector.ttf",
+          "characterSize": 25,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Change the text to show the winner",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "WinnerPlayerID",
+                "=",
+                "\"Player \""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "WinnerPlayerID",
+                "+",
+                "ToString(GlobalVariable(RLGLWinner))"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "WinnerPlayerID",
+                "+",
+                "\"!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ScoreLabelText",
+                "=",
+                "ToString(roundTo(GlobalVariable(RLGLTimer), 2))"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ScoreLabelText",
+                "+",
+                "\"s\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Change the UFO sprite to the colour of the winning player",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "DynamicWinnerSprite",
+                "=",
+                "ToNumber(ToString(GlobalVariable(RLGLWinner)))-1"
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 16777215,
+          "ambientLightColorG": 0,
+          "ambientLightColorR": 0,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
           "effects": []
         }
       ],
