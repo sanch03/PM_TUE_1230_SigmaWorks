@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Untitled scene",
+  "firstLayout": "TitleScreen",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -426,10 +426,11 @@
         "kind": "image",
         "metadata": "",
         "name": "NewSprite2-1 copy.png",
-         "smoothed": true,
+        "smoothed": true,
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "characters.png",
         "kind": "image",
         "metadata": "",
@@ -438,7 +439,6 @@
         "userAdded": true
       },
       {
-
         "alwaysLoaded": false,
         "file": "NewSprite2-1 copy 2.png",
         "kind": "image",
@@ -705,6 +705,87 @@
         "name": "UFO Yellow.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Spin-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Spin-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Spin-2-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Spin-2-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Green Light.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Light.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Traffic lights.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Traffic lights.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Red light.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red light.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "A.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "A.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "L.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "L.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "V.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "V.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "M.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "M.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -893,11 +974,11 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/main-scene"
+      "referenceTo": "/layouts/titlescreen"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/titlescreen"
+      "referenceTo": "/layouts/main-scene"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -918,6 +999,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/buttonmasherend"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/rlglmain"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/rlglend"
     }
   ],
   "externalEvents": [],

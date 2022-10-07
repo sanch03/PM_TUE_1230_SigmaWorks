@@ -1,8 +1,8 @@
 {
   "b": 52,
   "disableInputWhenNotFocused": true,
-  "mangledName": "ButtonMasherEnd",
-  "name": "ButtonMasherEnd",
+  "mangledName": "RLGLEnd",
+  "name": "RLGLEnd",
   "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -97,7 +97,7 @@
       "name": "ScoreLabel",
       "persistentUuid": "25b2bdd0-0448-4c1c-b023-5026199f9130",
       "width": 0,
-      "x": 310,
+      "x": 322,
       "y": 320,
       "zOrder": 5,
       "numberProperties": [],
@@ -324,7 +324,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Score:",
+      "string": "Time:",
       "font": "CozetteVector.ttf",
       "characterSize": 25,
       "color": {
@@ -345,7 +345,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "0",
+      "string": "0:00",
       "font": "CozetteVector.ttf",
       "characterSize": 25,
       "color": {
@@ -399,7 +399,7 @@
           "parameters": [
             "WinnerPlayerID",
             "+",
-            "ToString(GlobalVariable(ButtonMasherWinner))"
+            "ToString(GlobalVariable(RLGLWinner))"
           ]
         },
         {
@@ -410,6 +410,26 @@
             "WinnerPlayerID",
             "+",
             "\"!\""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "ScoreLabelText",
+            "=",
+            "ToString(roundTo(GlobalVariable(RLGLTimer), 2))"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "ScoreLabelText",
+            "+",
+            "\"s\""
           ]
         }
       ]
@@ -426,18 +446,7 @@
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "TextObject::String"
-          },
-          "parameters": [
-            "ScoreLabelText",
-            "=",
-            "ToString(GlobalVariable(ButtonMasherScore))"
-          ]
-        }
-      ]
+      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Comment",
@@ -472,7 +481,7 @@
           "parameters": [
             "DynamicWinnerSprite",
             "=",
-            "ToNumber(ToString(GlobalVariable(ButtonMasherWinner)))-1"
+            "ToNumber(ToString(GlobalVariable(RLGLWinner)))-1"
           ]
         }
       ]
