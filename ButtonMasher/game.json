@@ -21,21 +21,21 @@
     "name": "SigmaWorks Party Game",
     "description": "",
     "author": "",
-    "windowWidth": 800,
-    "windowHeight": 600,
+    "windowWidth": 1280,
+    "windowHeight": 720,
     "latestCompilationDirectory": "/Users/sanchit/Downloads/gdevexport/g3",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
     "platformSpecificAssets": {},
     "loadingScreen": {
-      "backgroundColor": 0,
+      "backgroundColor": 16777215,
       "backgroundFadeInDuration": 0.2,
-      "backgroundImageResourceName": "",
-      "gdevelopLogoStyle": "light",
+      "backgroundImageResourceName": "NewFile-1.png",
+      "gdevelopLogoStyle": "dark",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0.2,
-      "minDuration": 1.5,
+      "minDuration": 3,
       "progressBarColor": 16777215,
       "progressBarHeight": 20,
       "progressBarMaxWidth": 200,
@@ -786,6 +786,24 @@
         "name": "M.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1-0 copy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1-0 copy.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -969,6 +987,36 @@
       "name": "ButtonMasherScore",
       "type": "number",
       "value": 0
+    },
+    {
+      "folded": true,
+      "name": "p1-global",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "p2-global",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "p3-global",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "p4-global",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "game-number",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -982,7 +1030,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/untitled-scene"
+      "referenceTo": "/layouts/painter"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -1003,6 +1051,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/rlglmain"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/transitionscreen"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
