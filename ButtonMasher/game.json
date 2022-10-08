@@ -510,51 +510,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "NewSprite-1-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewSprite-1-0.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "NewSprite-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewSprite-2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "NewSprite-3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewSprite-3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "NewSprite-4-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewSprite-4-0.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "NewSprite-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewSprite-1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "NewSprite-1-1.png",
         "kind": "image",
         "metadata": "",
@@ -804,6 +759,247 @@
         "name": "NewFile-1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sigmaworks_logo (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sigmaworks_logo (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/A button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "A button.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/On-Screen Controls/Sprites/Flat Light/A button.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/A button2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "A button.png2",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/On-Screen Controls/Sprites/Shaded Dark/A button.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Cross.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Cross.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/PS Move/Cross.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Cross2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Cross.png2",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/PS Vita/Cross.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/A Button3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "A Button.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/Amazon Luna/A Button.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/A Button4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "A Button.png2",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/Steam Deck/A Button.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprite_platform-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprite_platform-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Left Stick.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Left Stick.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/Amazon Luna/Left Stick.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Left Stick2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Left Stick.png2",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/Ouya/Left Stick.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dpad_Default.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dpad_Default.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/Ouya/Dpad_Default.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dpad_Down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dpad_Down.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/Ouya/Dpad_Down.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dpad_Left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dpad_Left.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/Ouya/Dpad_Left.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dpad_Right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dpad_Right.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/Ouya/Dpad_Right.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dpad_Up.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dpad_Up.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Xelu Free Controller and Key Prompts/Console Inputs/Ouya/Dpad_Up.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-4-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-4-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1-0.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -990,31 +1186,31 @@
     },
     {
       "folded": true,
-      "name": "p1-global",
+      "name": "p1_global",
       "type": "number",
       "value": 0
     },
     {
       "folded": true,
-      "name": "p2-global",
+      "name": "p2_global",
       "type": "number",
       "value": 0
     },
     {
       "folded": true,
-      "name": "p3-global",
+      "name": "p3_global",
       "type": "number",
       "value": 0
     },
     {
       "folded": true,
-      "name": "p4-global",
+      "name": "p4_global",
       "type": "number",
       "value": 0
     },
     {
       "folded": true,
-      "name": "game-number",
+      "name": "game_number",
       "type": "number",
       "value": 0
     }
