@@ -1000,6 +1000,96 @@
         "name": "NewSprite-1-0.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Arrows0-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Arrows0-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Arrows0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Arrows0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Arrows4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Arrows4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Arrows1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Arrows1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Arrows2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Arrows2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Arrows3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Arrows3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Arrows8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Arrows8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Arrows5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Arrows5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Arrows6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Arrows6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Arrows7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Arrows7.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1259,6 +1349,14 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/regex"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/gamepads"

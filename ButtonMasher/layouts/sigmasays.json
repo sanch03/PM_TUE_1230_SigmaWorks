@@ -9,16 +9,16 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
-    "gridOffsetX": 0,
-    "gridOffsetY": 0,
+    "gridWidth": 128,
+    "gridHeight": 128,
+    "gridOffsetX": 64,
+    "gridOffsetY": 40,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 1,
+    "snap": true,
+    "zoomFactor": 0.5496000000000005,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -58,6 +58,35 @@
       "name": "reset",
       "type": "boolean",
       "value": false
+    },
+    {
+      "folded": true,
+      "name": "p1h",
+      "type": "number",
+      "value": 3
+    },
+    {
+      "folded": true,
+      "name": "p2h",
+      "type": "number",
+      "value": 3
+    },
+    {
+      "folded": true,
+      "name": "p3h",
+      "type": "number",
+      "value": 3
+    },
+    {
+      "folded": true,
+      "name": "p4h",
+      "type": "number",
+      "value": 3
+    },
+    {
+      "name": "totals",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -69,8 +98,8 @@
       "name": "circle",
       "persistentUuid": "35855b9b-14bb-443a-a523-a474d57fd679",
       "width": 0,
-      "x": 322,
-      "y": 188,
+      "x": 576,
+      "y": 296,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -84,8 +113,8 @@
       "name": "p1",
       "persistentUuid": "cb899076-0ba6-4050-a2bf-3f82a1a4872d",
       "width": 0,
-      "x": 75,
-      "y": 32,
+      "x": 320,
+      "y": 168,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -99,8 +128,8 @@
       "name": "p2",
       "persistentUuid": "9dfda068-e519-4766-879c-02bb9ab0f5a4",
       "width": 0,
-      "x": 622,
-      "y": 31,
+      "x": 832,
+      "y": 168,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -114,8 +143,8 @@
       "name": "p3",
       "persistentUuid": "0761a127-3e58-445c-a029-a637d803e21d",
       "width": 0,
-      "x": 74,
-      "y": 376,
+      "x": 320,
+      "y": 424,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -129,8 +158,8 @@
       "name": "p4",
       "persistentUuid": "0c45d9a3-c18d-4b81-8cb4-950636e60d8c",
       "width": 0,
-      "x": 615,
-      "y": 369,
+      "x": 832,
+      "y": 424,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -144,8 +173,8 @@
       "name": "p1health",
       "persistentUuid": "2cd719da-ca12-4caf-9c47-323396aaa139",
       "width": 96,
-      "x": 91,
-      "y": 146,
+      "x": 336,
+      "y": 296,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -159,8 +188,8 @@
       "name": "p2health",
       "persistentUuid": "a56a4678-e050-439f-8254-0b63e80fb12d",
       "width": 96,
-      "x": 642,
-      "y": 148,
+      "x": 848,
+      "y": 296,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -174,8 +203,8 @@
       "name": "p3health",
       "persistentUuid": "8b10942e-fd18-4fe6-b75b-891359f3b37d",
       "width": 96,
-      "x": 90,
-      "y": 499,
+      "x": 336,
+      "y": 552,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -189,9 +218,39 @@
       "name": "p4health",
       "persistentUuid": "579cf336-d7a7-4622-bb23-5af57310234f",
       "width": 96,
-      "x": 635,
-      "y": 493,
+      "x": 848,
+      "y": 552,
       "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 896,
+      "layer": "",
+      "name": "tile_background",
+      "persistentUuid": "583da38d-c68c-4773-89fc-5c2a36e7bc36",
+      "width": 1408,
+      "x": -64,
+      "y": -88,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "txt_dev",
+      "persistentUuid": "9ae5e516-6870-471b-8abd-aaee2caeb0ac",
+      "width": 0,
+      "x": 1022,
+      "y": 613,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -209,16 +268,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "Arrows0",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.15000000596046448,
+              "timeBetweenFrames": 0.11999999731779099,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewSprite-1-2.png",
+                  "image": "Arrows0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -235,7 +294,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewSprite-2-1.png",
+                  "image": "Arrows4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -252,7 +311,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewSprite-3-1.png",
+                  "image": "Arrows1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -269,7 +328,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewSprite-4-2.png",
+                  "image": "Arrows2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -286,7 +345,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewSprite-5-0.png",
+                  "image": "Arrows3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -303,7 +362,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewSprite-6.png",
+                  "image": "Arrows8.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -320,7 +379,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewSprite-7.png",
+                  "image": "Arrows5.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -337,7 +396,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewSprite-8.png",
+                  "image": "Arrows6.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -354,7 +413,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewSprite-9.png",
+                  "image": "Arrows7.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -469,12 +528,45 @@
       "height": 32,
       "name": "NewTiledSprite",
       "tags": "",
-      "texture": "NewSprite-1-0.png",
+      "texture": "NewSprite-1-0 copy.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "tile_background",
+      "tags": "",
+      "texture": "NewSprite-1-0 copy.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "txt_dev",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Keyboard keys (for dev):\nP1: W A S D\nP2: Arrow Keys\nP3: T F G H\nP4: I J K L",
+      "font": "CozetteVector.ttf",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
     }
   ],
   "events": [
@@ -650,121 +742,195 @@
             "reset",
             "False"
           ]
-        },
-        {
-          "type": {
-            "value": "ModVarScene"
-          },
-          "parameters": [
-            "p1time",
-            "=",
-            "1000"
-          ]
-        },
-        {
-          "type": {
-            "value": "ModVarScene"
-          },
-          "parameters": [
-            "p2time",
-            "=",
-            "1000"
-          ]
-        },
-        {
-          "type": {
-            "value": "ModVarScene"
-          },
-          "parameters": [
-            "p3time",
-            "=",
-            "1000"
-          ]
-        },
-        {
-          "type": {
-            "value": "ModVarScene"
-          },
-          "parameters": [
-            "p4time",
-            "=",
-            "1000"
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangeSprite"
-          },
-          "parameters": [
-            "circle",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "PlayAnimation"
-          },
-          "parameters": [
-            "circle"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "RandomInRange(1,10)"
-          ]
-        },
-        {
-          "type": {
-            "value": "PauseAnimation"
-          },
-          "parameters": [
-            "circle"
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangeSprite"
-          },
-          "parameters": [
-            "circle",
-            "=",
-            "circle.Sprite()+4"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"buttonclicktime\""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetSceneVariableAsBoolean"
-          },
-          "parameters": [
-            "buttonactive",
-            "True"
-          ]
-        },
-        {
-          "type": {
-            "value": "DebuggerTools::ConsoleLog"
-          },
-          "parameters": [
-            "\"keypress wait\"+ ToString(circle.Sprite())",
-            "",
-            ""
-          ]
         }
       ],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p1h",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p1time",
+                "=",
+                "1000"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p2h",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p2time",
+                "=",
+                "1000"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p3h",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p3time",
+                "=",
+                "1000"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p4h",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p4time",
+                "=",
+                "1000"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "circle",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayAnimation"
+              },
+              "parameters": [
+                "circle"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "RandomInRange(1,10)"
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseAnimation"
+              },
+              "parameters": [
+                "circle"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "circle",
+                "=",
+                "circle.Sprite()+4"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"buttonclicktime\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "buttonactive",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "\"keypress wait\"+ ToString(circle.Sprite())",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -1149,22 +1315,464 @@
       "conditions": [
         {
           "type": {
-            "value": "VarScene"
+            "value": "SceneVariableAsBoolean"
           },
           "parameters": [
-            "p1time",
-            "<",
-            "1000"
+            "buttonactive",
+            "True"
           ]
         },
         {
           "type": {
-            "value": "VarScene"
+            "value": "AnyKeyPressed"
           },
           "parameters": [
-            "p2time",
-            "<",
-            "1000"
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "t"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sprite"
+              },
+              "parameters": [
+                "circle",
+                "=",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p3time",
+                "=",
+                "TimerElapsedTime(\"buttonclicktime\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "h"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sprite"
+              },
+              "parameters": [
+                "circle",
+                "=",
+                "6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p3time",
+                "=",
+                "TimerElapsedTime(\"buttonclicktime\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "g"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sprite"
+              },
+              "parameters": [
+                "circle",
+                "=",
+                "7"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p3time",
+                "=",
+                "TimerElapsedTime(\"buttonclicktime\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "f"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sprite"
+              },
+              "parameters": [
+                "circle",
+                "=",
+                "8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p3time",
+                "=",
+                "TimerElapsedTime(\"buttonclicktime\")"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "buttonactive",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnyKeyPressed"
+          },
+          "parameters": [
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "i"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sprite"
+              },
+              "parameters": [
+                "circle",
+                "=",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p4time",
+                "=",
+                "TimerElapsedTime(\"buttonclicktime\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "l"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sprite"
+              },
+              "parameters": [
+                "circle",
+                "=",
+                "6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p4time",
+                "=",
+                "TimerElapsedTime(\"buttonclicktime\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "k"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sprite"
+              },
+              "parameters": [
+                "circle",
+                "=",
+                "7"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p4time",
+                "=",
+                "TimerElapsedTime(\"buttonclicktime\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "j"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sprite"
+              },
+              "parameters": [
+                "circle",
+                "=",
+                "8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "p4time",
+                "=",
+                "TimerElapsedTime(\"buttonclicktime\")"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p1time",
+                "<",
+                "1000"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p1h",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p2h",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p2time",
+                "<",
+                "1000"
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p3h",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p3time",
+                "<",
+                "1000"
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p4h",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p4time",
+                "<",
+                "1000"
+              ]
+            }
           ]
         },
         {
@@ -1183,6 +1791,46 @@
             "buttonactive",
             "False"
           ]
+        },
+        {
+          "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "\"p1h= \"+ToString(Variable(p1h))",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "\"p2h= \"+ToString(Variable(p2h))",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "\"totals= \"+ToString(Variable(totals))",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "\"totalslen= \"+ ToString(StrLength(ToString(Variable(totals))))",
+            "",
+            ""
+          ]
         }
       ],
       "events": [
@@ -1195,8 +1843,104 @@
               },
               "parameters": [
                 "p1time",
-                "<",
+                ">",
                 "Variable(p2time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p1time",
+                ">",
+                "Variable(p3time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p1time",
+                ">",
+                "Variable(p4time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p1h",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TiledSpriteObject::Width"
+              },
+              "parameters": [
+                "p1health",
+                "-",
+                "32"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "reset",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p2time",
+                ">",
+                "Variable(p1time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p2time",
+                ">",
+                "Variable(p3time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p2time",
+                ">",
+                "Variable(p4time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p2h",
+                "!=",
+                "0"
               ]
             }
           ],
@@ -1230,9 +1974,39 @@
                 "value": "VarScene"
               },
               "parameters": [
-                "p2time",
-                "<",
+                "p3time",
+                ">",
+                "Variable(p2time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p3time",
+                ">",
                 "Variable(p1time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p3time",
+                ">",
+                "Variable(p4time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p3h",
+                "!=",
+                "0"
               ]
             }
           ],
@@ -1242,7 +2016,73 @@
                 "value": "TiledSpriteObject::Width"
               },
               "parameters": [
-                "p1health",
+                "p3health",
+                "-",
+                "32"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "reset",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p4time",
+                ">",
+                "Variable(p2time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p4time",
+                ">",
+                "Variable(p3time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p4time",
+                ">",
+                "Variable(p1time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "p4h",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TiledSpriteObject::Width"
+              },
+              "parameters": [
+                "p4health",
                 "-",
                 "32"
               ]
@@ -1262,8 +2102,351 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "p1h",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarSceneTxt"
+          },
+          "parameters": [
+            "totals",
+            "+",
+            "\"1\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "p2h",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarSceneTxt"
+          },
+          "parameters": [
+            "totals",
+            "+",
+            "\"2\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "p3h",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarSceneTxt"
+          },
+          "parameters": [
+            "totals",
+            "+",
+            "\"3\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "p4h",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarSceneTxt"
+          },
+          "parameters": [
+            "totals",
+            "+",
+            "\"4\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TiledSpriteObject::Width"
+          },
+          "parameters": [
+            "p1health",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "p1h",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "p1time",
+            "=",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TiledSpriteObject::Width"
+          },
+          "parameters": [
+            "p2health",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "p2h",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "p2time",
+            "=",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TiledSpriteObject::Width"
+          },
+          "parameters": [
+            "p3health",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "p3h",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "p3time",
+            "=",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TiledSpriteObject::Width"
+          },
+          "parameters": [
+            "p4health",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "p4h",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "p4time",
+            "=",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "StrLength(ToString(Variable(totals)))",
+            ">=",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "\"totalmove= \"+ToString(Variable(totals))",
+            "",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "function gvar(variable){\n    return runtimeScene.getVariables().get(variable).getAsString()\n}\nlet scores = gvar('totals').split('')\nscores.shift();\n\nconsole.log(scores);\nlet first;\nif (!scores.includes('1')){\n    first = 1\n} else if (!scores.includes('2')){\n    first = 2\n} else if (!scores.includes('3')){\n    first = 3\n} else if (!scores.includes('4')){\n    first = 4\n}\n\nlet globalvar = runtimeScene.getGame().getVariables().get(\"p\"+first+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+3)\nconsole.log(\"First =\"+(first));\n\nlet second = scores[2]\nglobalvar = runtimeScene.getGame().getVariables().get(\"p\"+second+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+2)\nconsole.log(\"Second =\"+(second));\n\nlet third = scores[1]\nglobalvar = runtimeScene.getGame().getVariables().get(\"p\"+third+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+1)\nconsole.log(\"Third =\"+(third));\n",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "game_number",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"TransitionScreen\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "layers": [

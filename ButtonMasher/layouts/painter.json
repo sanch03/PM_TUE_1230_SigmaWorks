@@ -5735,7 +5735,7 @@
           "events": [
             {
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "runtimeScene.setBackgroundColor(100,100,240);\nfunction gvar(variable){\n    return runtimeScene.getVariables().get(variable).getAsNumber()\n}\nlet scores = [gvar(\"a1count\"),gvar(\"a2count\"),gvar(\"a3count\"),gvar(\"a4count\")]\nconsole.log(scores);\n\nlet first = scores.indexOf(Math.max.apply(Math,scores))+1;\nconsole.log()\nscores[first-1] = -1\nlet globalvar = runtimeScene.getGame().getVariables().get(\"p\"+first+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+3)\nconsole.log(\"First =\"+(first));\n\nlet second = scores.indexOf(Math.max.apply(Math,scores))+1;\nscores[second-1] = -1\nglobalvar = runtimeScene.getGame().getVariables().get(\"p\"+second+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+2)\nconsole.log(\"Second =\"+(second));\n\nlet third = scores.indexOf(Math.max.apply(Math,scores))+1;\nscores[third-1] = -1\nglobalvar = runtimeScene.getGame().getVariables().get(\"p\"+third+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+1)\nconsole.log(\"Third =\"+(third));\n",
+              "inlineCode": "runtimeScene.setBackgroundColor(100,100,240);\nfunction gvar(variable){\n    return runtimeScene.getVariables().get(variable).getAsNumber()\n}\nlet scores = [gvar(\"a1count\"),gvar(\"a2count\"),gvar(\"a3count\"),gvar(\"a4count\")]\nconsole.log(scores);\n\nlet first = scores.indexOf(Math.max.apply(Math,scores))+1;\nscores[first-1] = -1\nlet globalvar = runtimeScene.getGame().getVariables().get(\"p\"+first+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+3)\nconsole.log(\"First =\"+(first));\n\nlet second = scores.indexOf(Math.max.apply(Math,scores))+1;\nscores[second-1] = -1\nglobalvar = runtimeScene.getGame().getVariables().get(\"p\"+second+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+2)\nconsole.log(\"Second =\"+(second));\n\nlet third = scores.indexOf(Math.max.apply(Math,scores))+1;\nscores[third-1] = -1\nglobalvar = runtimeScene.getGame().getVariables().get(\"p\"+third+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+1)\nconsole.log(\"Third =\"+(third));\n",
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
@@ -5744,6 +5744,16 @@
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "game_number",
+                    "+",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "DebuggerTools::ConsoleLog"
