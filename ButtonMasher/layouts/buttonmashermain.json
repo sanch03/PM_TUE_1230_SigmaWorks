@@ -13,8 +13,8 @@
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
-    "gridOffsetX": 0,
-    "gridOffsetY": 0,
+    "gridOffsetX": 16,
+    "gridOffsetY": 16,
     "gridColor": 10401023,
     "gridAlpha": 0.25,
     "snap": true,
@@ -307,14 +307,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 41.90476989746094,
+      "height": 68,
       "layer": "",
-      "name": "KeyIndicator",
-      "persistentUuid": "bb4407f5-ba88-4d0e-8e68-1c75aa4cc6c1",
-      "width": 32.00000762939453,
-      "x": 160,
-      "y": 246,
-      "zOrder": 22,
+      "name": "sprite_a",
+      "persistentUuid": "75122af3-2236-401a-ad89-5472d0ebe59a",
+      "width": 68,
+      "x": 560,
+      "y": 540,
+      "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -322,60 +322,45 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 41.904762268066406,
+      "height": 64,
       "layer": "",
-      "name": "KeyIndicator",
-      "persistentUuid": "e0e22585-907b-4ac7-92ee-8bf95f0e1f07",
-      "width": 32,
-      "x": 1088,
-      "y": 246,
-      "zOrder": 22,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
+      "name": "sprite_cross",
+      "persistentUuid": "21f1e5dc-d2df-4b2e-a72c-61a98e679e61",
+      "width": 68,
+      "x": 652,
+      "y": 544,
+      "zOrder": 24,
+      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": true,
-      "height": 41.90476989746094,
+      "customSize": false,
+      "height": 0,
       "layer": "",
-      "name": "KeyIndicator",
-      "persistentUuid": "5198152b-b6fb-487c-9eef-27027ad8a22f",
-      "width": 32.00000762939453,
-      "x": 160,
-      "y": 438,
-      "zOrder": 22,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 2
-        }
-      ],
+      "name": "txt_controlsslash",
+      "persistentUuid": "eb83002f-2c40-44b4-b9a7-bc7b70ce8c50",
+      "width": 0,
+      "x": 627,
+      "y": 560,
+      "zOrder": 25,
+      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": true,
-      "height": 41.904762268066406,
+      "customSize": false,
+      "height": 0,
       "layer": "",
-      "name": "KeyIndicator",
-      "persistentUuid": "f5b32fb0-a475-4d6e-8e33-07258ad9a0c3",
-      "width": 32,
-      "x": 1088,
-      "y": 438,
-      "zOrder": 22,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
+      "name": "txt_keysdev",
+      "persistentUuid": "09bd9503-9b52-4472-a3ac-ecf60fa56751",
+      "width": 0,
+      "x": 16,
+      "y": 688,
+      "zOrder": 26,
+      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -1082,11 +1067,41 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "a"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "a"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Cross\"",
+                ""
+              ]
+            }
           ]
         }
       ],
@@ -1107,12 +1122,48 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyReleased"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "a"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "a"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Cross\"",
+                ""
+              ]
+            }
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -1152,11 +1203,41 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "l"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "l"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "2",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "2",
+                "\"Cross\"",
+                ""
+              ]
+            }
           ]
         }
       ],
@@ -1177,12 +1258,48 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyReleased"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "l"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "l"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "",
+                "2",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "",
+                "2",
+                "\"Cross\"",
+                ""
+              ]
+            }
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -1222,11 +1339,41 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "v"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "v"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "3",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "3",
+                "\"Cross\"",
+                ""
+              ]
+            }
           ]
         }
       ],
@@ -1247,12 +1394,48 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyReleased"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "v"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "v"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "",
+                "3",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "",
+                "3",
+                "\"Cross\"",
+                ""
+              ]
+            }
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -1292,11 +1475,41 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "m"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "m"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "4",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "4",
+                "\"Cross\"",
+                ""
+              ]
+            }
           ]
         }
       ],
@@ -1317,12 +1530,48 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyReleased"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "m"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "m"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "",
+                "4",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "",
+                "4",
+                "\"Cross\"",
+                ""
+              ]
+            }
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
