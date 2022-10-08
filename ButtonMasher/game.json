@@ -1222,7 +1222,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/main-scene"
+      "referenceTo": "/layouts/transitionscreen"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -1247,10 +1247,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/rlglmain"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/transitionscreen"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
