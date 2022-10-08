@@ -1,8 +1,8 @@
 {
   "b": 49,
   "disableInputWhenNotFocused": true,
-  "mangledName": "TransitionScreen",
-  "name": "TransitionScreen",
+  "mangledName": "InterRound",
+  "name": "InterRound",
   "r": 17,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -96,14 +96,7 @@
       ]
     }
   ],
-  "variables": [
-    {
-      "folded": true,
-      "name": "Countdown",
-      "type": "number",
-      "value": 10
-    }
-  ],
+  "variables": [],
   "instances": [
     {
       "angle": 0,
@@ -342,36 +335,6 @@
       "x": 684,
       "y": 124,
       "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "NextRound",
-      "persistentUuid": "d8520b68-7433-48f0-901a-b71f6174d81b",
-      "width": 0,
-      "x": 506,
-      "y": 163,
-      "zOrder": 12,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "RoundCountdown",
-      "persistentUuid": "58df2af3-0b35-41a6-9b71-8003878eb1b7",
-      "width": 0,
-      "x": 743,
-      "y": 162,
-      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -790,48 +753,6 @@
     },
     {
       "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "NextRound",
-      "smoothed": true,
-      "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Next round in:",
-      "font": "CozetteVector.ttf",
-      "characterSize": 32,
-      "color": {
-        "b": 255,
-        "g": 101,
-        "r": 229
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "RoundCountdown",
-      "smoothed": true,
-      "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "10",
-      "font": "CozetteVector.ttf",
-      "characterSize": 32,
-      "color": {
-        "b": 255,
-        "g": 101,
-        "r": 229
-      }
-    },
-    {
-      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "P1Label",
@@ -996,14 +917,59 @@
             "=",
             "ToString(GlobalVariable(game_number))"
           ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "p1sprites",
+            "192",
+            "0",
+            "100",
+            "0"
+          ]
         },
         {
           "type": {
-            "value": "ResetTimer"
+            "value": "AddForceVersPos"
           },
           "parameters": [
-            "",
-            "\"TransitionCountdown\""
+            "p2sprites",
+            "448",
+            "0",
+            "100",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "p3sprites",
+            "704",
+            "0",
+            "100",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "p4sprites",
+            "960",
+            "0",
+            "100",
+            "0"
           ]
         }
       ]
@@ -1013,248 +979,100 @@
       "conditions": [
         {
           "type": {
-            "value": "VarGlobal"
+            "value": "PosY"
           },
           "parameters": [
-            "game_number",
-            "!=",
-            "0"
+            "p1",
+            "<=",
+            "720 - 300 - (20 * GlobalVariable(p1_global))"
           ]
         }
       ],
-      "actions": [],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceVersPos"
-              },
-              "parameters": [
-                "p1sprites",
-                "192",
-                "0",
-                "100",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceVersPos"
-              },
-              "parameters": [
-                "p2sprites",
-                "448",
-                "0",
-                "100",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceVersPos"
-              },
-              "parameters": [
-                "p3sprites",
-                "704",
-                "0",
-                "100",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceVersPos"
-              },
-              "parameters": [
-                "p4sprites",
-                "960",
-                "0",
-                "100",
-                "0"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "p3",
-                "<=",
-                "720 - 300 - (20 * GlobalVariable(p3_global))"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "p3sprites"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "p2",
-                "<=",
-                "720 - 300 - (20 * GlobalVariable(p2_global))"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "p2sprites"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "p1",
-                "<=",
-                "720 - 300 - (20 * GlobalVariable(p1_global))"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "p1sprites"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "p4",
-                "<=",
-                "720 - 300 - (20 * GlobalVariable(p4_global))"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "p4sprites"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Repeat",
-      "repeatExpression": "10",
-      "conditions": [],
       "actions": [
         {
           "type": {
-            "value": "TextObject::String"
+            "value": "Arreter"
           },
           "parameters": [
-            "RoundCountdown",
-            "=",
-            "ToString(round(abs(TimerElapsedTime(\"TransitionCountdown\")-10)))"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "1"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"TransitionCountdown\"",
-                ">=",
-                "10"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"TransitionCountdown\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PushScene"
-              },
-              "parameters": [
-                "",
-                "\"Painter\""
-              ]
-            }
+            "p1sprites"
           ]
         }
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Notes to self:\n- Change scene transition to a random scene\n- Skip showing the leaderboard if game_number is 0\n- Otherwise show it, then show countdown to next round",
-      "comment2": ""
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosY"
+          },
+          "parameters": [
+            "p2",
+            "<=",
+            "720 - 300 - (20 * GlobalVariable(p2_global))"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "p2sprites"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosY"
+          },
+          "parameters": [
+            "p3",
+            "<=",
+            "720 - 300 - (20 * GlobalVariable(p3_global))"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "p3sprites"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosY"
+          },
+          "parameters": [
+            "p4",
+            "<=",
+            "720 - 300 - (20 * GlobalVariable(p4_global))"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "p4sprites"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
