@@ -73,6 +73,31 @@
       "name": "RandomLightTimer",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "distance",
+      "type": "array",
+      "children": [
+        {
+          "folded": true,
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "type": "number",
+          "value": 0
+        }
+      ]
     }
   ],
   "instances": [
@@ -387,6 +412,21 @@
       "x": 16,
       "y": 688,
       "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 48,
+      "layer": "",
+      "name": "debugtext",
+      "persistentUuid": "b6b6c8cb-e18c-4acd-98c9-358e0bcb7e46",
+      "width": 576,
+      "x": 592,
+      "y": 336,
+      "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -889,6 +929,27 @@
       "effects": [],
       "behaviors": [],
       "string": "GO!",
+      "font": "CozetteVector.ttf",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "debugtext",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "aaaaa",
       "font": "CozetteVector.ttf",
       "characterSize": 50,
       "color": {
@@ -1954,6 +2015,56 @@
             "=",
             "ToString(TimerElapsedTime(\"StageTimer\"))"
           ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "distance[0]",
+            "=",
+            "Player1.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "distance[3]",
+            "=",
+            "Player4.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "distance[2]",
+            "=",
+            "Player3.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "distance[1]",
+            "=",
+            "Player2.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "debugtext",
+            "=",
+            "ArrayTools::Join(\"distance\", \"-\")"
+          ]
         }
       ]
     },
@@ -2151,16 +2262,6 @@
             "=",
             "1"
           ]
-        },
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"RLGLEnd\"",
-            ""
-          ]
         }
       ]
     },
@@ -2199,16 +2300,6 @@
             "RLGLWinner",
             "=",
             "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"RLGLEnd\"",
-            ""
           ]
         }
       ]
@@ -2249,16 +2340,6 @@
             "=",
             "3"
           ]
-        },
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"RLGLEnd\"",
-            ""
-          ]
         }
       ]
     },
@@ -2298,15 +2379,106 @@
             "=",
             "4"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
           "type": {
-            "value": "Scene"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "\"RLGLEnd\"",
-            ""
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Earth",
+                "Player1",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Earth",
+                "Player2",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Earth",
+                "Player3",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Earth",
+                "Player4",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "\n// Get the raw gdjs player score array\nconst playerScoreArray = runtimeScene.getVariables().get('distance').getAllChildrenArray()\n// Map it to a workable array of numbers\nconst playerScoreValues = playerScoreArray.map((arrayValue) => arrayValue.getAsNumber())\n\nlet playerScoresWithNames = [\n    ['p1', playerScoreValues[0]],\n    ['p2', playerScoreValues[1]],\n    ['p3', playerScoreValues[2]],\n    ['p4', playerScoreValues[3]]\n]\n\nplayerScoresWithNames = playerScoresWithNames.sort((a, b) => {\n    if (a[1] > b[1]) {\n        return -1\n    } else {\n        return 1\n    }\n})\n\nconsole.log(playerScoresWithNames)\n\nconst firstplace = runtimeScene.getGame().getVariables().get(playerScoresWithNames[0][0] + \"_global\")\nfirstplace.setNumber(firstplace.getValue() + 3)\nconst secondplace = runtimeScene.getGame().getVariables().get(playerScoresWithNames[1][0]+ \"_global\")\nsecondplace.setNumber(secondplace.getValue() + 2)\nconst thirdplace = runtimeScene.getGame().getVariables().get(playerScoresWithNames[2][0] + \"_global\")\nthirdplace.setNumber(thirdplace.getValue() + 1)\n",
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"RLGLEnd\"",
+                    ""
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
