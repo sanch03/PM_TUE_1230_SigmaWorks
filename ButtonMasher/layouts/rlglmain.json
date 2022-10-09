@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.7199999999999998,
+    "zoomFactor": 0.7999999999999998,
     "windowMask": false
   },
   "objectsGroups": [
@@ -952,6 +952,16 @@
             "",
             "\"GameDurationTimer\""
           ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "game_number",
+            "+",
+            "1"
+          ]
         }
       ]
     },
@@ -1109,7 +1119,7 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::And"
+            "value": "BuiltinCommonInstructions::Or"
           },
           "parameters": [],
           "subInstructions": [
@@ -1301,7 +1311,7 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::And"
+            "value": "BuiltinCommonInstructions::Or"
           },
           "parameters": [],
           "subInstructions": [
@@ -1493,7 +1503,7 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::And"
+            "value": "BuiltinCommonInstructions::Or"
           },
           "parameters": [],
           "subInstructions": [
@@ -1685,7 +1695,7 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::And"
+            "value": "BuiltinCommonInstructions::Or"
           },
           "parameters": [],
           "subInstructions": [

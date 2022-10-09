@@ -131,6 +131,16 @@
             "=",
             "ToString(round(abs(TimerElapsedTime(\"main\")-10)))"
           ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "game_number",
+            "+",
+            "1"
+          ]
         }
       ]
     },

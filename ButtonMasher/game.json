@@ -1390,7 +1390,7 @@
       "folded": true,
       "name": "ButtonMasherWinner",
       "type": "string",
-      "value": "This variable has not been changed (bad)"
+      "value": "0"
     },
     {
       "folded": true,
@@ -1445,10 +1445,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/sigmasays"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/buttonmashercountdown"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

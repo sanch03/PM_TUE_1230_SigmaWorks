@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.5,
     "snap": false,
-    "zoomFactor": 0.98,
+    "zoomFactor": 0.7399999999999998,
     "windowMask": false
   },
   "objectsGroups": [
@@ -102,6 +102,39 @@
       "name": "Countdown",
       "type": "number",
       "value": 10
+    },
+    {
+      "folded": true,
+      "name": "NextGame",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "GamesRemaining",
+      "type": "array",
+      "children": [
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Painter"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Sigmasays"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "ButtonMasherMain"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "RLGLMain"
+        }
+      ]
     }
   ],
   "instances": [
@@ -372,6 +405,36 @@
       "x": 743,
       "y": 162,
       "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "debug_a",
+      "persistentUuid": "f5032221-99cb-4096-a17a-8e2284d66a6a",
+      "width": 0,
+      "x": 12,
+      "y": 22,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "debug_a2",
+      "persistentUuid": "37acba98-7575-47e2-babe-528104b010b7",
+      "width": 0,
+      "x": 15,
+      "y": 66,
+      "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -913,9 +976,149 @@
         "g": 255,
         "r": 255
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "debug_a",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "characterSize": 32,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "debug_a2",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "characterSize": 32,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
     }
   ],
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "game_number",
+            "=",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ArrayTools::Shuffle"
+          },
+          "parameters": [
+            "",
+            "\"GamesRemaining\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Scene setup",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarSceneTxt"
+          },
+          "parameters": [
+            "NextGame",
+            "=",
+            "VariableString(GamesRemaining[GlobalVariable(game_number)-1])"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "debug_a2",
+            "=",
+            "VariableString(GamesRemaining[0])+VariableString(GamesRemaining[1])+VariableString(GamesRemaining[2])+VariableString(GamesRemaining[3])"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "debug_a",
+            "=",
+            "VariableString(NextGame)"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"TransitionCountdown\""
+          ]
+        }
+      ]
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -996,17 +1199,32 @@
             "=",
             "ToString(GlobalVariable(game_number))"
           ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"TransitionCountdown\""
-          ]
         }
       ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Round repeat",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "We should only even be invoking the leaderboard given that we've played at least one game",
+      "comment2": ""
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1017,7 +1235,7 @@
           },
           "parameters": [
             "game_number",
-            "!=",
+            ">",
             "0"
           ]
         }
@@ -1086,6 +1304,31 @@
                 "value": "PosY"
               },
               "parameters": [
+                "p1",
+                "<=",
+                "720 - 300 - (20 * GlobalVariable(p1_global))"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "p1sprites"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
                 "p3",
                 "<=",
                 "720 - 300 - (20 * GlobalVariable(p3_global))"
@@ -1136,31 +1379,6 @@
                 "value": "PosY"
               },
               "parameters": [
-                "p1",
-                "<=",
-                "720 - 300 - (20 * GlobalVariable(p1_global))"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "p1sprites"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
                 "p4",
                 "<=",
                 "720 - 300 - (20 * GlobalVariable(p4_global))"
@@ -1181,9 +1399,120 @@
       ]
     },
     {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Game end logic",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Invoke this only if we've played all four games\n\n1) Cleanup arrays to default state\n2) Show countdown to main menu\n3) Bring back to main menu",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "game_number",
+            "=",
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "VariableClearChildren"
+          },
+          "parameters": [
+            "GamesRemaining"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariablePushString"
+          },
+          "parameters": [
+            "GamesRemaining",
+            "\"RLGLMain\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariablePushString"
+          },
+          "parameters": [
+            "GamesRemaining",
+            "\"ButtonMasherMain\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariablePushString"
+          },
+          "parameters": [
+            "GamesRemaining",
+            "\"Painter\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariablePushString"
+          },
+          "parameters": [
+            "GamesRemaining",
+            "\"SigmaSays\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"CountdownMainMenu\""
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::Repeat",
-      "repeatExpression": "10",
-      "conditions": [],
+      "repeatExpression": "31",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "game_number",
+            "=",
+            "5"
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -1192,7 +1521,7 @@
           "parameters": [
             "RoundCountdown",
             "=",
-            "ToString(round(abs(TimerElapsedTime(\"TransitionCountdown\")-10)))"
+            "ToString(round(abs(TimerElapsedTime(\"CountdownMainMenu\")-30)))"
           ]
         },
         {
@@ -1214,9 +1543,9 @@
               },
               "parameters": [
                 "",
-                "\"TransitionCountdown\"",
+                "\"CountdownMainMenu\"",
                 ">=",
-                "10"
+                "30"
               ]
             }
           ],
@@ -1227,16 +1556,120 @@
               },
               "parameters": [
                 "",
-                "\"TransitionCountdown\""
+                "\"CountdownMainMenu\""
               ]
             },
             {
               "type": {
-                "value": "PushScene"
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "game_number",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
               },
               "parameters": [
                 "",
-                "\"Painter\""
+                "\"TitleScreen\"",
+                "no"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "New round logic",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "game_number",
+            "!=",
+            "5"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "11",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "RoundCountdown",
+                "=",
+                "ToString(round(abs(TimerElapsedTime(\"TransitionCountdown\")-10)))"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"TransitionCountdown\"",
+                    ">=",
+                    "10"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"TransitionCountdown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "VariableString(NextGame)",
+                    ""
+                  ]
+                }
               ]
             }
           ]

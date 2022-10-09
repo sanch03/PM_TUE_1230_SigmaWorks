@@ -474,6 +474,34 @@
             "=",
             "ToNumber(ToString(GlobalVariable(ButtonMasherWinner)))-1"
           ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "game_number",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"TransitionScreen\"",
+            ""
+          ]
         }
       ]
     }
