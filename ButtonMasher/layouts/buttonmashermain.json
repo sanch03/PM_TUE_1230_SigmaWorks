@@ -1634,25 +1634,30 @@
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"ButtonMasherEnd\"",
-            ""
-          ]
-        }
-      ],
+      "actions": [],
       "events": [
         {
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "runtimeScene.setBackgroundColor(100,100,240);\n\n// Get the raw gdjs player score array\nconst playerScoreArray = runtimeScene.getVariables().get('PlayerScores').getAllChildrenArray()\n// Map it to a workable array of numbers\nconst playerScoreValues = playerScoreArray.map((arrayValue) => arrayValue.getAsNumber())\n// Find the max score\nconst maxPlayerScore = Math.max(...playerScoreValues)\n// Set the current winner to the max score as a string\nconst maxPlayerId = String(playerScoreValues.indexOf(maxPlayerScore) + 1)\n\n// Set the global variable to the game winner\nruntimeScene._runtimeGame.getVariables()\n    .get('ButtonMasherWinner').setString(maxPlayerId)\nruntimeScene._runtimeGame.getVariables()\n    .get('ButtonMasherScore').setNumber(maxPlayerScore)",
+          "inlineCode": "runtimeScene.setBackgroundColor(100,100,240);\n\n// Get the raw gdjs player score array\nconst playerScoreArray = runtimeScene.getVariables().get('PlayerScores').getAllChildrenArray()\n// Map it to a workable array of numbers\nconst playerScoreValues = playerScoreArray.map((arrayValue) => arrayValue.getAsNumber())\n// Find the max score\nconst maxPlayerScore = Math.max(...playerScoreValues)\n// Set the current winner to the max score as a string\nconst maxPlayerId = String(playerScoreValues.indexOf(maxPlayerScore) + 1)\n\nlet scores = playerScoreValues\nconsole.log(scores);\n\nlet first = scores.indexOf(Math.max.apply(Math,scores))+1;\nscores[first-1] = -1\nlet globalvar = runtimeScene.getGame().getVariables().get(\"p\"+first+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+3)\nconsole.log(\"First =\"+(first));\n\nlet second = scores.indexOf(Math.max.apply(Math,scores))+1;\nscores[second-1] = -1\nglobalvar = runtimeScene.getGame().getVariables().get(\"p\"+second+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+2)\nconsole.log(\"Second =\"+(second));\n\nlet third = scores.indexOf(Math.max.apply(Math,scores))+1;\nscores[third-1] = -1\nglobalvar = runtimeScene.getGame().getVariables().get(\"p\"+third+\"_global\")\nglobalvar.setNumber(globalvar.getAsNumber()+1)\nconsole.log(\"Third =\"+(third));\n\n// Set the global variable to the game winner\nruntimeScene._runtimeGame.getVariables()\n    .get('ButtonMasherWinner').setString(maxPlayerId)\nruntimeScene._runtimeGame.getVariables()\n    .get('ButtonMasherScore').setNumber(maxPlayerScore)",
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"TransitionScreen\"",
+                ""
+              ]
+            }
+          ]
         }
       ]
     }
