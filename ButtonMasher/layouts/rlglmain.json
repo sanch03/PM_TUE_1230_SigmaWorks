@@ -424,8 +424,8 @@
       "name": "debugtext",
       "persistentUuid": "b6b6c8cb-e18c-4acd-98c9-358e0bcb7e46",
       "width": 576,
-      "x": 592,
-      "y": 336,
+      "x": 432,
+      "y": 768,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
@@ -2227,6 +2227,7 @@
       "parameters": []
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2266,6 +2267,7 @@
       ]
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2305,6 +2307,7 @@
       ]
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2344,6 +2347,7 @@
       ]
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2473,7 +2477,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"RLGLEnd\"",
+                    "\"TransitionScreen\"",
                     ""
                   ]
                 }
