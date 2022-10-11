@@ -11,7 +11,7 @@ gdjs.evtsExt__Gamepads__C_Axis_pushed.conditionTrue_0 = {val:false};
 gdjs.evtsExt__Gamepads__C_Axis_pushed.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__Gamepads__C_Axis_pushed.userFunc0xa58f58 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__C_Axis_pushed.userFunc0xa79038 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {Gamepad[]} */
 const gamepads = navigator.getGamepads ? navigator.getGamepads() : (navigator.webkitGetGamepads ? navigator.webkitGetGamepads() : []);
@@ -155,7 +155,7 @@ gdjs.evtsExt__Gamepads__C_Axis_pushed.eventsList0 = function(runtimeScene, event
 {
 
 
-gdjs.evtsExt__Gamepads__C_Axis_pushed.userFunc0xa58f58(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Gamepads__C_Axis_pushed.userFunc0xa79038(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

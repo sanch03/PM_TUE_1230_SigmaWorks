@@ -352,6 +352,19 @@ gdjs.copyArray(runtimeScene.getObjects("p4_gravity"), gdjs.TitleScreenCode.GDp4_
 }
 
 
+{
+
+
+gdjs.TitleScreenCode.condition0IsTrue_0.val = false;
+{
+gdjs.TitleScreenCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs.TitleScreenCode.condition0IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(1);
+}}
+
+}
+
+
 };
 
 gdjs.TitleScreenCode.func = function(runtimeScene) {

@@ -705,7 +705,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp1Objects3.length;i<l;++i) {
 gdjs.PainterCode.GDp1Objects3.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10746948);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10889812);
 }
 }}
 }
@@ -767,7 +767,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp1Objects3.length;i<l;++i) {
 gdjs.PainterCode.GDp1Objects3.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10753308);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10896172);
 }
 }}
 }
@@ -829,7 +829,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp1Objects3.length;i<l;++i) {
 gdjs.PainterCode.GDp1Objects3.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10759628);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10902492);
 }
 }}
 }
@@ -891,7 +891,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp1Objects2.length;i<l;++i) {
 gdjs.PainterCode.GDp1Objects2.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10766108);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10908972);
 }
 }}
 }
@@ -1511,7 +1511,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp2Objects3.length;i<l;++i) {
 gdjs.PainterCode.GDp2Objects3.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10772380);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10915244);
 }
 }}
 }
@@ -1573,7 +1573,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp2Objects3.length;i<l;++i) {
 gdjs.PainterCode.GDp2Objects3.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10778740);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10921604);
 }
 }}
 }
@@ -1635,7 +1635,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp2Objects3.length;i<l;++i) {
 gdjs.PainterCode.GDp2Objects3.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10785060);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10927924);
 }
 }}
 }
@@ -1697,7 +1697,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp2Objects2.length;i<l;++i) {
 gdjs.PainterCode.GDp2Objects2.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10791540);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10934404);
 }
 }}
 }
@@ -2317,7 +2317,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp3Objects3.length;i<l;++i) {
 gdjs.PainterCode.GDp3Objects3.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10797804);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10940668);
 }
 }}
 }
@@ -2379,7 +2379,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp3Objects3.length;i<l;++i) {
 gdjs.PainterCode.GDp3Objects3.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10803700);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10946564);
 }
 }}
 }
@@ -2441,7 +2441,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp3Objects3.length;i<l;++i) {
 gdjs.PainterCode.GDp3Objects3.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10810388);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10953252);
 }
 }}
 }
@@ -2503,7 +2503,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp3Objects2.length;i<l;++i) {
 gdjs.PainterCode.GDp3Objects2.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10816868);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10959732);
 }
 }}
 }
@@ -3123,7 +3123,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp4Objects2.length;i<l;++i) {
 gdjs.PainterCode.GDp4Objects2.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10823188);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10966052);
 }
 }}
 }
@@ -3185,7 +3185,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp4Objects2.length;i<l;++i) {
 gdjs.PainterCode.GDp4Objects2.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10829012);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10971876);
 }
 }}
 }
@@ -3247,7 +3247,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp4Objects2.length;i<l;++i) {
 gdjs.PainterCode.GDp4Objects2.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10835700);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10978564);
 }
 }}
 }
@@ -3309,7 +3309,7 @@ for(var i = 0, k = 0, l = gdjs.PainterCode.GDp4Objects1.length;i<l;++i) {
 gdjs.PainterCode.GDp4Objects1.length = k;}if ( gdjs.PainterCode.condition1IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition2IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10842180);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10985044);
 }
 }}
 }
@@ -3357,7 +3357,7 @@ gdjs.PainterCode.eventsList35(runtimeScene);
 
 
 };gdjs.PainterCode.mapOfGDgdjs_46PainterCode_46GDNewSpriteObjects1Objects = Hashtable.newFrom({"NewSprite": gdjs.PainterCode.GDNewSpriteObjects1});
-gdjs.PainterCode.userFunc0xa85c68 = function(runtimeScene) {
+gdjs.PainterCode.userFunc0x979d68 = function(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 function gvar(variable){
@@ -3385,7 +3385,7 @@ globalvar.setNumber(globalvar.getAsNumber()+1)
 console.log("Third ="+(third));
 
 };
-gdjs.PainterCode.asyncCallback10856364 = function (runtimeScene, asyncObjectsList) {
+gdjs.PainterCode.asyncCallback10999228 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "TransitionScreen", false);
 }}
 gdjs.PainterCode.eventsList37 = function(runtimeScene) {
@@ -3396,7 +3396,7 @@ gdjs.PainterCode.eventsList37 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.PainterCode.asyncCallback10856364(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.PainterCode.asyncCallback10999228(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -3408,7 +3408,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), 
 {
 
 
-gdjs.PainterCode.userFunc0xa85c68(runtimeScene);
+gdjs.PainterCode.userFunc0x979d68(runtimeScene);
 
 }
 
@@ -3438,7 +3438,7 @@ gdjs.PainterCode.eventsList37(runtimeScene);} //End of subevents
 gdjs.PainterCode.condition0IsTrue_0.val = false;
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition0IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10850948);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10993812);
 }
 }if (gdjs.PainterCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "countdown");
@@ -3490,7 +3490,7 @@ gdjs.PainterCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.getTimerEla
 }if ( gdjs.PainterCode.condition0IsTrue_0.val ) {
 {
 {gdjs.PainterCode.conditionTrue_1 = gdjs.PainterCode.condition1IsTrue_0;
-gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10853700);
+gdjs.PainterCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10996564);
 }
 }}
 if (gdjs.PainterCode.condition1IsTrue_0.val) {
